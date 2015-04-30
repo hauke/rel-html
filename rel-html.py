@@ -1185,7 +1185,7 @@ class rel_html_gen(HTMLParser):
                              (r.get('url'), r.get('rel')))
             if (not r.get('ignore_signature')):
                 sys.stdout.write('\t\t\t\t<td><a href="%s">signed</a></td>\n' %
-                                 (r.get('base_url') + r.get('signed_tarball')))
+                                 (r.get('base_url') + '/' + r.get('signed_tarball')))
             else:
                 sys.stdout.write('\t\t\t\t<td></td>\n')
             if (r.get('maintained')):
